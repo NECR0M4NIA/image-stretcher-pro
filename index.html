@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Stretcher Pro</h1>
+        <div class="uploader">
+            <label for="fileInput" class="upload-btn">Glisser-déposer une image ou cliquer ici</label>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <div class="image-container">
+            <img id="uploadedImage" alt="Aucune image" />
+        </div>
+        <div class="sliders">
+            <div class="slider-group">
+                <label for="widthSlider">Largeur</label>
+                <input type="range" id="widthSlider" min="50" max="1000" value="300">
+            </div>
+            <div class="slider-group">
+                <label for="heightSlider">Hauteur</label>
+                <input type="range" id="heightSlider" min="50" max="1000" value="300">
+            </div>
+        </div>
+        <button id="downloadBtn" class="download-btn">Télécharger l'image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
